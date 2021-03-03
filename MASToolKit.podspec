@@ -20,7 +20,7 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => "https://github.com/other170/MASToolKit.git", :tag => "#{spec.version}" }
   
   # why要
-  # spec.source_files = "MASToolKit/Classes/*"
+  spec.source_files = "MASToolKit/Classes/*"
   
   spec.subspec 'Device' do |ss|
     ss.source_files = 'MASToolKit/Classes/Device/*'
