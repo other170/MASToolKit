@@ -19,12 +19,15 @@ Pod::Spec.new do |spec|
 
   spec.source       = { :git => "https://github.com/other170/MASToolKit.git", :tag => "#{spec.version}" }
   
-  # why要
-  spec.source_files = "MASToolKit/Classes/*"
+  # 注：设置分层文件夹结构后就不用写这句
+  # spec.source_files = "MASToolKit/**/*"
   
+  # 建立库下文件层级
   spec.subspec 'Device' do |ss|
     ss.source_files = 'MASToolKit/Classes/Device/*'
   end
+  
+  
   
   # 依赖的系统库
   spec.framework  = "UIKit"
