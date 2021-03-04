@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "MASToolKit"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "MASToolKit是一个工具类库，集成一些常用的第三方工具代码，让程序可以实现组件化提供方案"
 
   spec.description  = <<-DESC
@@ -19,13 +19,16 @@ Pod::Spec.new do |spec|
 
   spec.source       = { :git => "https://github.com/other170/MASToolKit.git", :tag => "#{spec.version}" }
   
-  # 注：设置分层文件夹结构后就不用写这句
-  # spec.source_files = "MASToolKit/**/*"
+  
   
   # 建立库下文件层级
-  spec.subspec 'Device' do |ss|
-    ss.source_files = 'MASToolKit/Classes/Device/*'
+  spec.subspec 'Device' do |device|
+    device.source_files = 'MASToolKit/Classes/Device/*'
   end
+  
+  
+  
+  
   
   
   
