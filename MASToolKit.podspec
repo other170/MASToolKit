@@ -23,12 +23,12 @@ Pod::Spec.new do |spec|
   
   # 建立库下文件层级
   spec.subspec 'Device' do |ss|
-    ss.source_files = 'MASToolKit/Classes/Device/*'
+    ss.source_files = 'MASToolKit/Classes/Device/*.{h,m}'
   end
   
   # 建立库下文件层级
   spec.subspec 'Date' do |ss|
-    ss.source_files = 'MASToolKit/Classes/Date/*'
+    ss.source_files = 'MASToolKit/Classes/Date/*.{h,m}'
   end
   
   
